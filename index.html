@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Whiteboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="toolbar">
+        <button id="clear" title="Clear Canvas">🧹</button>
+        <input type="color" id="colorPicker" title="Pick a Color">
+        <select id="brushSize" title="Select Brush Size">
+            <option value="5">5px</option>
+            <option value="10">10px</option>
+            <option value="15">15px</option>
+            <option value="20">20px</option>
+        </select>
+        <button id="eraser" title="Eraser Mode">✏️</button>
+        <button id="undo" title="Undo Last Action">↩️</button>
+        <button id="shape" title="Shape Tool">🔲</button>
+        <select id="shapeType" title="Select Shape Type">
+            <option value="rectangle">Rectangle</option>
+            <option value="circle">Circle</option>
+            <option value="line">Line</option>
+        </select>
+        <button id="textTool" title="Text Tool">🅰️</button>
+        <button id="toggleGrid" title="Toggle Grid">🔳</button>
+        <button id="toggleDarkMode" title="Toggle Dark Mode">🌙</button>
+        <input type="file" id="backgroundImage" accept="image/*" title="Set Background Image">
+        <button id="save" title="Save Whiteboard">💾</button>
+    </div>
+    <canvas id="whiteboard"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
